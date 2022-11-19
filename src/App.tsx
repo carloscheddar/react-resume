@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components'
 import Experience, { ExperienceType } from './Experience';
 import Header from './Header';
-import Profile from './Profile';
+import Bullets from './Bullets';
 
 const firstName = "Carlos"
 const lastName = "FelicianoBarba"
 const title = "Software Engineer"
 
-const profiles = [
+const profileBullets = [
   "Experience with Backend Web Development",
   "Proficient use of Git, Github, etc.",
   "Proficient programmer in Python"
@@ -44,7 +44,7 @@ const App = () => {
       <Content>
         <div></div>
         <div>
-          <Profile {...{profiles}} />
+          <Bullets sectionName="Profile" bullets={profileBullets} />
           <Experience {...{experiences}} />
         </div>
       </Content>
