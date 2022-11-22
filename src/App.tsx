@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Experience, { ExperienceType } from './Experience';
 import Header from './Header';
 import Bullets from './Bullets';
+import Sidebar from './Sidebar'
 
 const firstName = "Carlos"
 const lastName = "FelicianoBarba"
@@ -37,10 +38,35 @@ const technicalBullets = [
   "Migrated Heroku deployments into a Docker based Continuous Integration and Delivery flow using Github, TravisCI and AWS Elastic Beanstalk."
 ]
 
+const sidebarSections = [
+  {
+    title: "Contact",
+    bullets: [
+      "carlos@felicianobarba.com",
+      "github.com/carloscheddar",
+      "cel: +1 (415) 729-3359"
+    ],
+  },
+  {
+    title: "Location",
+    bullets: [
+      "United States",
+    ],
+  },
+  {
+    title: "Languages",
+    bullets: [
+      "English",
+      "Spanish",
+    ],
+  }
+]
+
 // The first column controls the width of the sidebar
 const Content = styled.div`
   display: grid;
   grid-template-columns: 200px auto;
+  margin-left: -20px;
 `
 
 const App = () => {
@@ -48,7 +74,7 @@ const App = () => {
     <div className="App">
       <Header {...{firstName, lastName, title}} />
       <Content>
-        <div></div>
+        <Sidebar sections={sidebarSections} />
         <div>
           <Bullets sectionName="Profile" bullets={profileBullets} />
           <Experience {...{experiences}} />

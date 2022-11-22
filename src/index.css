@@ -10,10 +10,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #4d4d4d;
   width: 21cm;
-  height: 29.7cm;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Prevent browsers from converting the font to black when printing. */
+@media print {
+  body {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 0 #4d4d4d;
+  }
 }
