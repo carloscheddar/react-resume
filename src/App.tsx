@@ -31,10 +31,16 @@ const experiences: ExperienceType[] = [
   }
 ]
 
+const technicalBullets = [
+  "Adapted a legacy Backbone.js app to render React.js components with state management handled by Redux.",
+  "Implemented PostgreSQL database replication using Makara and PgBouncer.",
+  "Migrated Heroku deployments into a Docker based Continuous Integration and Delivery flow using Github, TravisCI and AWS Elastic Beanstalk."
+]
+
 // The first column controls the width of the sidebar
 const Content = styled.div`
   display: grid;
-  grid-template-columns: 160px auto;
+  grid-template-columns: 200px auto;
 `
 
 const App = () => {
@@ -46,6 +52,7 @@ const App = () => {
         <div>
           <Bullets sectionName="Profile" bullets={profileBullets} />
           <Experience {...{experiences}} />
+          <Bullets sectionName="Technical Experience" bullets={technicalBullets} />
         </div>
       </Content>
     </div>
