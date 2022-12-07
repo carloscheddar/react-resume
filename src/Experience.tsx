@@ -31,7 +31,7 @@ const List = styled.ul`
 const ListHeader = styled.div`
   display: grid;
   grid-template-columns: 100px 1fr auto;
-  margin-bottom: 2px;
+  margin-bottom: 6px;
   line-height: 1.95rem;
 
   b {
