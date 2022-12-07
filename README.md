@@ -1,6 +1,11 @@
 # React Resume
 After years of having a good looking LaTex resume based on the design of Adrien Friggeri I decided to reverse engineer it in React to be more comfortable making the changes I wanted.
 
+## Output Preview
+<img width="582" alt="Screen Shot 2022-12-07 at 3 47 42 PM" src="https://user-images.githubusercontent.com/3360539/206280930-9d05614a-10d2-4128-be1e-8e9cc1f4357e.png">
+https://github.com/carloscheddar/react-resume/files/10179514/Resume-CarlosFB2022.pdf
+
+
 # Print to PDF
 Once the resume is populated with your information you just need to open the "Print Dialog" and "Save as PDF".
 
